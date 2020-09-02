@@ -1,4 +1,4 @@
-import { Table, Id, GeneratedValue, Column, SQLTypes } from "https://deno.land/x/mandarinets@v2.0.0/mod.ts";
+import { Table, Id, GeneratedValue, Column, SQLTypes } from "https://deno.land/x/mandarinets@v2.0.1/mod.ts";
 
 @Table({ schema: "public" })
 export class BtfsPeer {

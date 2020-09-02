@@ -1,4 +1,4 @@
-import { Repository, MandarineRepository } from "https://deno.land/x/mandarinets@v2.0.0/mod.ts";
+import { Repository, MandarineRepository } from "https://deno.land/x/mandarinets@v2.0.1/mod.ts";
 import {BtfsPeer} from "./BtfsPeer.ts";
 
 @Repository()

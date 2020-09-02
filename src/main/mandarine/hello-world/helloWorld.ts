@@ -1,4 +1,4 @@
-import { MandarineCore, Controller, GET } from "https://deno.land/x/mandarinets@v2.0.0/mod.ts";
+import { Controller, GET } from "https://deno.land/x/mandarinets@v2.0.1/mod.ts";
 import {BtfsPeerRepository} from "../BtfsPeerRepository.ts";
 import {BtfsPeer} from "../BtfsPeer.ts";
 
@@ -19,8 +19,6 @@ export class MyController {
         for(let i=0; i<= this.peers.length-1; i++) {
             console.log('iteration: #' + i);
             let peer = BtfsPeer.fromRaw(this.peers[i]);
-            console.log(peer);
-
             this.repo.save(peer);
             counter++;
 
@@ -35,8 +33,6 @@ export class MyController {
         for (let i = 0; i <= this.peers.length - 1; i++) {
             console.log('iteration: #' + i);
             let peer = BtfsPeer.fromRaw(this.peers[i]);
-            console.log(peer);
-
             await this.repo.save(peer);
             counter++;
 

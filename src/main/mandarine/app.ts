@@ -1,4 +1,4 @@
-import { MandarineCore } from "https://deno.land/x/mandarinets@v2.0.0/mod.ts";
+import { MandarineCore } from "https://deno.land/x/mandarinets@v2.0.1/mod.ts";
 import { MyController } from "./hello-world/helloWorld.ts";
 
 const controllers = [MyController];
